@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Smartmessaging
+  jpa:
+    database: POSTGRESQL
+  datasource:
+    platform: postgresql
+    url: jdbc:postgresql://localhost:5432/smartmessaging
+    username: ${USER}
+    password: ${USER}
+    driverClassName: org.postgresql.Driver
+server:
+  port: 8082
+jsondoc:
+  version: 1.0
+  basePath: http://localhost:${server.port}
+  packages: 
+    - com.resamania.app.birthday
+liquibase:
+  changeLog: classpath:/liquibase/changelog/db.changelog-master.xml

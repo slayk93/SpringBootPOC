@@ -5,33 +5,29 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.1.RELEASE</version>
+        <version>1.5.3.RELEASE</version>
     </parent>
-    
+
     <groupId>com.poc</groupId>
-    <artifactId>facebookconnect</artifactId>
+    <artifactId>rabbitmq</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     
-    <name>facebookconnect</name>
+    <name>rabbitmq</name>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
-    
+
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        
-        <dependency>
-            <groupId>org.springframework.social</groupId>
-            <artifactId>spring-social-facebook</artifactId>
-        </dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
     </dependencies>
-    
+
+
     <build>
         <plugins>
             <plugin>
@@ -40,5 +36,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>
