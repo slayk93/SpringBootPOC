@@ -20,9 +20,6 @@ public class ClubDAO extends JdbcDaoSupport {
 
     public Club getClubById(final Integer id) {
 
-        this.getJdbcTemplate().execute("DROP TABLE IF EXISTS clubs");
-        this.getJdbcTemplate().execute("CREATE TABLE clubs ( id integer NOT NULL, name text )");
-
         this.getJdbcTemplate().execute("INSERT INTO clubs(id, name) VALUES (1, 'Wellness Training Ravel')");
         this.getJdbcTemplate().execute("INSERT INTO clubs(id, name) VALUES (2, 'Fds')");
         this.getJdbcTemplate().execute("INSERT INTO clubs(id, name) VALUES (3, 'Genae')");

@@ -17,4 +17,4 @@ jsondoc:
   packages: 
     - com.resamania.app.birthday
 liquibase:
-  changeLog: classpath:/liquibase/changelog/db.changelog-master.xml
+  changeLog: classpath:/liquibase/db.changelog-master.xml
